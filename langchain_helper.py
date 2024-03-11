@@ -3,8 +3,9 @@ from langchain.llms import OpenAI
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 from langchain.chains import SequentialChain
+from secret_key import OPENAI_API_KEY
 
-os.environ['OPENAI_API_KEY'] = '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'
+os.environ['OPENAI_API_KEY'] = OPENAI_API_KEY
 llm = OpenAI(temperature = 0.7 )
 
 
